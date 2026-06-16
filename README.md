@@ -135,7 +135,15 @@ python main.py
 python main.py --no-trajectory-video
 ```
 
-## 结果展示
+## 效果展示
+
+![车辆检测效果](docs/demo_detection.png)
+
+![车辆轨迹图](docs/trajectory_result.png)
+
+![流程示意图](docs/pipeline_overview.png)
+
+## 结果输出
 
 运行后主要结果位于 `outputs/`：
 

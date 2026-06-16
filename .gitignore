@@ -36,3 +36,4 @@ debug/
 .env
 local_config.yaml
 *.zip
+docs/_*.png
