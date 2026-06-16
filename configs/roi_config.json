@@ -1,0 +1,23 @@
+{
+  "image_width": 1280,
+  "image_height": 720,
+  "roi_polygon": [
+    [
+      475,
+      489
+    ],
+    [
+      677,
+      716
+    ],
+    [
+      1130,
+      610
+    ],
+    [
+      611,
+      460
+    ]
+  ],
+  "note": "ROI polygon for target highway lane area"
+}

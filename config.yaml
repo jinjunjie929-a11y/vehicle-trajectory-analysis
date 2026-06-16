@@ -1,0 +1,39 @@
+paths:
+  video: data/highway_03.mp4
+  model: models/yolov8n-seg.pt
+  roi: configs/roi_config.json
+
+video:
+  base_width: 1280
+  base_height: 720
+  base_fps: 50.0
+  start_frame: 0
+  process_seconds: 30.0
+
+traffic:
+  direction: TOWARD_CAMERA
+  lane_width_m: 3.75
+
+lane_map:
+  target_lane_count: 5
+  min_valid_frames: 8
+  sample_seconds: 30.0
+  sample_interval_seconds: 0.5
+
+detection:
+  yolo_conf: 0.08
+  yolo_iou: 0.45
+  class_confidence:
+    car: 0.18
+    truck: 0.18
+    bus: 0.18
+    motorcycle: 0.08
+
+outputs:
+  lane_map: outputs/stable_lane_map.json
+  distance_csv: outputs/vehicle_distance.csv
+  distance_video: outputs/vehicle_distance.mp4
+  trajectory_excel: outputs/vehicle_trajectory_roi_xy.xlsx
+  trajectory_overview: outputs/vehicle_trajectory_roi_xy_overview.png
+  trajectory_by_id_dir: outputs/vehicle_trajectory_roi_xy_by_id
+  trajectory_render_dir: outputs/vehicle_trajectory_render

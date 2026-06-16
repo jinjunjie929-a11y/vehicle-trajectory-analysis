@@ -1,0 +1,38 @@
+# Python cache 
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# Data files
+data/
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Model files
+models/
+*.pt
+*.onnx
+*.engine
+
+# Output files
+outputs/
+debug/
+*.xlsx
+*.csv
+
+# Local files
+.env
+local_config.yaml
+*.zip
